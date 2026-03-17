@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --Grey500: hsl(217, 12%, 63%);
+  --Grey900: hsl(213, 19%, 18%);
+  --Grey950: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%)
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: black;
+}
+
+
+.container {
+  width: 80%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  margin: 150px auto;
+  background: linear-gradient(var(--Grey900), var(--Grey950));
+  border-radius: 23px;
+}
+
+.container .starIcon {
+  background-color: var(--Grey900);
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.container h2 {
+  font-size: 1.7rem;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.container p {
+  color: var(--Grey500);
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.ratings div {
+  background-color: var(--Grey900);
+  color: var(--white);
+  font-size: 18px;
+  width: 55px;
+  height: 55px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+
+.ratings div:hover {
+  background-color: var(--orange);
+}
+
+.submitRating {
+  letter-spacing: 1.5px;
+  background-color: var(--orange);
+  text-transform: uppercase;
+  color: var(--Grey950);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+  padding:  14px 0;
+  margin-top: 20px;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.submitRating:hover , .submitRating:active {
+  background-color: var(--white);
+}
+
+.result {
+  background-color: var(--Grey900);
+  color: var(--orange);
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+
+
+
