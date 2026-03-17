@@ -1,16 +1,60 @@
-# React + Vite
+# Frontend Mentor - Interactive Rating Component (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the Interactive rating component coding challenge](./preview.jpg)
 
-Currently, two official plugins are available:
+## Welcome! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is my solution to the [Frontend Mentor Interactive Rating Component challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).  
 
-## React Compiler
+I built this project using **React** and **Vite**, with **lifting state up** to manage the selected rating and the submit action. The app dynamically switches content to show a "Thank you" screen after the user submits their rating.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Live Demo:** [Click here to view](https://abdessamadachaha.github.io/Interactive-rating-component/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Select a rating from 1 to 5
+- Submit button updates the content using React state
+- Uses **lifting state up** to share the selected rating between components
+- Displays a "Thank you" screen with the chosen rating and an image
+- Smooth hover and interaction effects for buttons
+
+---
+
+## Technologies Used
+
+- **React** – For building interactive UI
+- **Vite** – For fast development and build
+- **JavaScript / JSX** – Logic and component rendering
+- **CSS** – Styling and responsive design
+
+---
+
+## How It Works
+
+1. User selects a rating (1–5)  
+2. Selected rating is stored in a **parent state** (lifting state up)  
+3. Clicking **Submit** updates the content to the "Thank you" screen  
+4. Original rating options are hidden, showing only the result
+
+This approach allows multiple components (buttons and result display) to share the same state efficiently.
+
+---
+
+## Getting Started
+
+To run this project locally:
+
+```bash
+# Clone the repo
+git clone https://github.com/abdessamadachaha/Interactive-rating-component.git
+
+# Navigate to the project folder
+cd Interactive-rating-component
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
